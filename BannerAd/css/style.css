@@ -1,14 +1,20 @@
 .container {
-  height: 300px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
   background-color: #69b0bc;
   position: relative;
   text-align: center;
+  overflow: hidden;
+}
+
+.row::after {
+  clear: both;
+  display: table;
 }
 
 .column {
   margin: auto;
-  text-align: center;
+  float: left;
   padding: 0;
 }
 .tooth {
@@ -42,11 +48,23 @@
 }
 
 .main_img {
-  transition-delay:4s;
-  transition: transform 1s ease-in;
+  transition: transform 3s ease-in;
   position: absolute;
   right: -600px;
 }
 
 .tooth_ad .main_img {
   transform: translateX(-600px);
+}
+
+.request_btn {
+  transition: transform 3.5s ease-in;
+  position: absolute;
+  right: 600px;
+  z-index: 1;
+  bottom: 15%;
+}
+
+.tooth_ad .request_btn {
+  transform: translateX(460px);
+}
