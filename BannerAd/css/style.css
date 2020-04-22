@@ -1,0 +1,51 @@
+.container {
+  height: 300px;
+  width: 250px;
+  background-color: #69b0bc;
+  position: relative;
+  display: block;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+ul {
+  white-space: nowrap;
+  margin: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  display: inline;
+}
+
+.tooth {
+  margin: auto;
+  transition: transform 1s ease-in;
+}
+
+.tooth_ad .tooth {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+/* 
+.dental_care {
+  transition: transform 1s ease-in;
+  position: absolute;
+  left: -300px;
+}
+
+.tooth_ad .dental_care {
+  transform: translateX(300px);
+}
+
+.with_compassion_txt {
+  transition: transform 1s ease-in;
+  position: absolute;
+  right: -300px;
+}
+
+.tooth_ad .with_compassion_txt {
+  transform: translateX(-300px);
+} */
