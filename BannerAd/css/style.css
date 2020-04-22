@@ -3,24 +3,15 @@
   width: 250px;
   background-color: #69b0bc;
   position: relative;
-  display: block;
-  flex-direction: row;
-  margin: 0 auto;
+  text-align: center;
 }
 
-ul {
-  white-space: nowrap;
+.column {
   margin: auto;
+  text-align: center;
+  padding: 0;
 }
-
-ul,
-li {
-  list-style: none;
-  display: inline;
-}
-
 .tooth {
-  margin: auto;
   transition: transform 1s ease-in;
 }
 
@@ -29,7 +20,7 @@ li {
   -ms-transform: scale(0);
   transform: scale(0);
 }
-/* 
+
 .dental_care {
   transition: transform 1s ease-in;
   position: absolute;
@@ -48,4 +39,14 @@ li {
 
 .tooth_ad .with_compassion_txt {
   transform: translateX(-300px);
-} */
+}
+
+.main_img {
+  transition-delay:4s;
+  transition: transform 1s ease-in;
+  position: absolute;
+  right: -600px;
+}
+
+.tooth_ad .main_img {
+  transform: translateX(-600px);
