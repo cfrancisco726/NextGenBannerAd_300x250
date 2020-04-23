@@ -5,6 +5,8 @@
   position: relative;
   text-align: center;
   overflow: hidden;
+  border-style: solid;
+  border-color: #69b0bc;
 }
 
 .row::after {
