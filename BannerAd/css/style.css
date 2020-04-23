@@ -54,7 +54,7 @@
 }
 
 .tooth_ad .main_img {
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
   transform: translateX(-600px);
 }
 
