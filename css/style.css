@@ -29,13 +29,13 @@
   transform: scale(0);
 }
 
-.dental_care {
+.dental-care {
   transition: transform 1s ease-in;
   position: absolute;
   left: -300px;
 }
 
-.tooth_ad .dental_care {
+.tooth_ad .dental-care {
   transform: translateX(300px);
 }
 
@@ -49,25 +49,46 @@
   transform: translateX(-300px);
 }
 
-.main_img {
-  transition: transform 3s ease-in;
+.tooth_ad .main-img {
   position: absolute;
-  right: -600px;
+  top: 0px;
+  left: 0px;
+  animation: fadeIn 4s;
 }
 
-.tooth_ad .main_img {
-  transition-delay: 0.1s;
-  transform: translateX(-600px);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.request_btn {
-  transition: transform 4s ease-in;
+.request-btn {
+  transition: transform 5s ease-in;
   position: absolute;
   right: 600px;
   z-index: 1;
   bottom: 15%;
 }
 
-.tooth_ad .request_btn {
+.tooth_ad .request-btn {
   transform: translateX(460px);
+}
+
+.logo {
+  transition: transform 4s ease-in;
+  position: absolute;
+  top: 10px;
+  right: 600px;
+  z-index: 1;
+  bottom: 15%;
+}
+
+.tooth_ad .logo {
+  transform: translateX(600px);
 }
